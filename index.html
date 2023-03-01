@@ -36,7 +36,34 @@
 			color: #ffe4e1; /* Pink hover state */
 		}
 
+		/* Style for the submenu */
+		.submenu {
+			display: none;
+			position: absolute;
+			background-color: brown;
+			padding: 10px;
+			top: 100%;
+			left: 0;
+			z-index: 999;
+		}
 
+		/* Show the submenu when hovering over the "Products" link */
+		.menu li:hover .submenu {
+			display: block;
+		}
+
+		/* Style for the submenu links */
+		.submenu a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			margin: 5px 0;
+			transition: color 0.3s ease;
+		}
+
+		.submenu a:hover {
+			color: #ffe4e1; /* Pink hover state */
+		}
 
 
 
@@ -71,7 +98,7 @@
 
 		.button {
 			background-color: brown;
-			border: none;
+	-m 		border: none;
 			border-radius: 5px;
 			color: white;
 			cursor: pointer;
@@ -92,7 +119,14 @@
 		<h1>Cups and Buckets of Breakfast</h1>
 		<nav>
 			<a href="#">Home</a>
-			<a href="#">Products</a>
+			<li class="menu-item"><a href="#">Products</a>
+				<ul class="submenu">
+					<li><a href="#">Xicaras</a></li>
+					<li><a href="#">Cestas de Chocolate</a></li>
+					<li><a href="#">Cestas Café da Manhã</a></li>
+					<li><a href="#">Cestas de Aniversário</a></li>
+				</ul>
+			</li>
 			<a href="#">About Us</a>
 			<a href="#">Contact Us</a>
 		</nav>
