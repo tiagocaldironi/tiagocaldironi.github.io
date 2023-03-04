@@ -1,10 +1,9 @@
-<style>
 		body {
 			background-color: #ffe4e1; /* Pink background */
 			font-family: Arial, sans-serif;
 		}
 
-		}
+		
 
 		/* Show the submenu when hovering over the "Products" link */
 		.menu li:hover .submenu {
@@ -55,7 +54,7 @@
 
 		.button {
 			background-color: brown;
-	-m 		border: none;
+	 		border: none;
 			border-radius: 5px;
 			color: white;
 			cursor: pointer;
@@ -68,4 +67,3 @@
 		.button:hover {
 			background-color: #a52a2a; /* Darker brown hover state */
 		}
-	</style>
